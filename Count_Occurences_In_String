@@ -1,0 +1,16 @@
+package pratice;
+
+import java.util.Scanner;
+
+public class Count_Occurences_InChar {
+public static void main(String[] args) {
+	String str = "java is a good programming ;anguage to learn about web development and app development and various businees logics to solve java is the best language to learn!!..";
+	Scanner sc = new Scanner(System.in);
+	System.out.print("Enter a Character in this String to find the occurences of the char in this String : ");
+	String value=sc.next();
+	int len = str.length();
+	int val=str.replace(value, "").length();
+	int count = len-val;
+	System.out.print("The Number of Occurences of " +value +" is : "+count);
+}
+}
