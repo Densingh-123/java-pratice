@@ -1,0 +1,33 @@
+package pratice;
+
+import java.util.Arrays;
+
+public class Check_TwoArray_Equal {
+public static void main(String[] args) {
+	int a[]= {1,2,3,4,5};
+	int b[]= {1,2,3,4,5};
+	boolean status = Arrays.equals(a, b);
+	if(status==true) {
+		System.out.print("Both array are Equal!!..");
+	}else {
+		System.out.print("Both array are not Equal!!..");
+	}
+	System.out.println();
+	//Method -2 
+	boolean state = true;
+	if(a.length==b.length) {
+		for(int i=0;i<a.length;i++) {
+			if(a[i]!=b[i]) {
+				state=false;
+			}
+		}
+	}else {
+		state=false;
+	}
+	if(state==true) {
+		System.out.print("Both array are Equal!!..");
+	}else {
+		System.out.print("Both array are not Equal!!..");
+	}
+}
+}
