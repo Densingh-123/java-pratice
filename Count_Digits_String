@@ -1,0 +1,15 @@
+package pratice;
+import java.util.Scanner;
+public class Count_Digits_String {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("Enter the String to Find the Number of Digits : ");
+	String str = sc.next();
+	String temp="";
+	int count=0;
+	for(int i=str.length()-1;i>=0;i--) {
+	count++;
+	}
+	System.out.print(count);
+}
+}
